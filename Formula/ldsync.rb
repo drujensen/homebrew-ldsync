@@ -8,11 +8,12 @@ class Ldsync < Formula
 
   def install
     system "shards", "build"
-    system "cp", "bin/ldsync", "#{prefix}/ldsync"
+    system "mkdir", "-p", "#{prefix}/bin"
+    system "cp", "bin/ldsync", "#{prefix}/bin/ldsync"
   end
 
   test do
-    output = shell_output("#{prefix}/ldsync --help")
+    output = shell_output("#{prefix}/bin/ldsync --help")
     assert output.includes? "The Launch Darkly Sync Utility"
   end
 end
