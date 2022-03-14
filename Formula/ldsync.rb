@@ -1,8 +1,8 @@
 class Ldsync < Formula
   desc "ldsync utility will manage your Launch Darkly flags"
   homepage "https://github.com/drujensen/ldsync"
-  url "https://github.com/drujensen/ldsync/archive/refs/tags/v0.1.2.tar.gz"
-  sha256 "2d7fbf69be8c7d86a914752bd119a8f7f17046c9f7e1bd62603830e1632179e2"
+  url "https://github.com/drujensen/ldsync/archive/refs/tags/v0.1.3.tar.gz"
+  sha256 "656ce1ce67fbe605b2cb36a1d15c59aac0bac38c3fe5b261f56ee4c92e08d503"
 
   depends_on "crystal"
 
